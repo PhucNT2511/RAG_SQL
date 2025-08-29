@@ -1,0 +1,6 @@
+mysql_db:
+  url: "YOUR_MYSQL_URL"
+
+gemini:
+  api_key: "YOUR_GEMINI_API_KEY"
+  model: "gemini-2.5-flash"
