@@ -6,10 +6,10 @@ import yaml
 with open("config/config.yaml") as f:
     cfg = yaml.safe_load(f)
 db_cfg = cfg["mysql_db"]
-conn_str = db_cfg['uri']
+conn_str = db_cfg['url']
 engine = create_engine(conn_str)
 
-# Đọc dữ liệu từ bảng Chi nhánh
+#
 df_existing = pd.read_sql("SELECT * FROM `KPI`", engine)
 print(df_existing)
 
